@@ -1,7 +1,6 @@
-import { login} from './actions'
+import { createUser} from './createUser'
 
-export default function LoginPage() {
-
+export default function Profiles() {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <form className="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg space-y-6">
@@ -29,13 +28,13 @@ export default function LoginPage() {
             className="input input-bordered w-full"
           />
         </div>
-        <div className="form-control mt-6">
+        <div className="form-control">
           <button
             type="submit"
-            formAction={login}
-            className="btn btn-primary w-full"
+            formAction={createUser}
+            className="btn btn-secondary w-full"
           >
-            Log in
+            Create User
           </button>
         </div>
       </form>
